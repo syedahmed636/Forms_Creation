@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Markytics</title>
+    </head>
+    <body>
+
+     <form action="" method="post">
+                     {% csrf_token %}
+         <fieldset>
+             <legend><h2>INITIAL REPORTING </h2></legend>
+
+         <table>
+
+             <tr><td><label> * Location :</label></td>
+                         <td><select name="Location" required>
+                            <option value="">Select your Location</option>
+                           <option value="Location-1">Location-1</option>
+                           <option value="Location-2">Location-2</option>
+                           <option value="Location-3">Location-3</option>
+                           <option value="Location-4">Location-4</option>
+                         </select></td>
+             </tr>
+
+             <tr><td><label> * Incident Description:</label></td>
+                 <td><textarea rows="4" cols="50" name="Incident_Desc"  required></textarea></td>
+             </tr>
+
+                <tr><td><label> * Incident Location:</label></td>
+                 <td><textarea rows="4" cols="50" name="Incident_Loc"  required></textarea></td>
+             </tr>
+
+
+
+             <tr><td><label> * Date and Time of the Incident:</label></td>
+             <td><input type="date" name="Date" required>
+                 <input type="time" name="Time" required></td>
+             </tr>
+
+
+
+             <tr><td><label> * Initial Security :</label></td>
+                         <td><select name="Initial_Security">
+                            <option value="">Security Level</option>
+                           <option value="Option-1">Option-1</option>
+                           <option value="Option-2">Option-2</option>
+                           <option value="Option-3">Option-3</option>
+                           <option value="Option-4">Option-4</option>
+                             </select></td>
+             </tr>
+
+             <tr><td><label> &nbsp&nbsp Suspected Cause:</label></td>
+                 <td><textarea rows="4" cols="50" name="Suspected_Cause"></textarea></td>
+             </tr>
+
+
+             <tr><td><label> &nbsp&nbsp Immediate Actions Taken:</label></td>
+                 <td><textarea rows="4" cols="50" name="Actions"></textarea></td>
+             </tr>
+
+             <tr><td><label> * Sub-Incident Types:</label></td>
+                   <td><input type="radio"  name="Incident_Type" value="Type-1" required>&nbsp Type-1<br>
+                   <input type="radio"  name="Incident_Type" value="Type-2" required>&nbsp Type-2</td></tr>
+
+             <tr><td><label> * Reported by:</label></td>
+                 <td><input type="text"  name="Reported_by"  required></td>
+             </tr>
+
+         </table>
+
+    <br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+         <input type="submit" value="SUBMIT">
+
+
+
+             </fieldset>
+
+     </form>
+    </body>
+</html>
